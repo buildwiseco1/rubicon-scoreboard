@@ -1,0 +1,98 @@
+[
+  {
+    "id": "PRED-005A",
+    "title": "Iran Ceasefire Holds",
+    "call": "No full US-Israel strike restart on Iran",
+    "confidence": 70,
+    "deadline": "2026-08-01",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-005D",
+    "title": "No US Ground War in Iran",
+    "call": "No US ground troops enter Iran",
+    "confidence": 85,
+    "deadline": "2026-08-01",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-008",
+    "title": "Partial Abraham Accords",
+    "call": "Trump settles for 2-3 countries, not all 6",
+    "confidence": 78,
+    "deadline": "2026-08-26",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-009",
+    "title": "Pakistan Rejects Abraham Accords",
+    "call": "Pakistan does not join or recognize Israel",
+    "confidence": 88,
+    "deadline": "2026-12-31",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-011",
+    "title": "China Clean-Tech Captures Asia",
+    "call": "China's clean-tech exports (solar, batteries, EV) to Asia ex-China rise materially as Hormuz crisis drives energy diversification",
+    "confidence": 62,
+    "deadline": "2027-06-30",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-001",
+    "title": "India-Pakistan Ceasefire",
+    "call": "Ceasefire experiences at least one serious violation requiring third-party intervention before Oct 2026",
+    "confidence": 72,
+    "deadline": "2026-10-31",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-003",
+    "title": "HUMAIN / Vision 2030 Gap",
+    "call": "HUMAIN partial AI delivery by Dec 2027 but $1T pledge unverified, NEOM not substantially complete",
+    "confidence": 65,
+    "deadline": "2027-12-31",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-004",
+    "title": "MBS Pattern Break",
+    "call": "At least one HUMAIN data center confirmed live with verified third-party workloads by Dec 2026",
+    "confidence": 68,
+    "deadline": "2026-12-31",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-005B",
+    "title": "Hormuz Not Fully Open",
+    "call": "Strait of Hormuz vessel traffic stays below 30% of pre-war normal by Aug 1 2026",
+    "confidence": 65,
+    "deadline": "2026-08-01",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-005C",
+    "title": "Trump Iran Deal Framework",
+    "call": "Trump announces a US-Iran deal or framework before Aug 1 2026 — thin deal covering Hormuz partial opening",
+    "confidence": 55,
+    "deadline": "2026-08-01",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-010",
+    "title": "Texas Senate Race 2026",
+    "call": "Paxton vs Talarico — race reaches Toss-Up or stays Lean R, final margin under 5 points",
+    "confidence": 68,
+    "deadline": "2026-11-10",
+    "status": "OPEN"
+  },
+  {
+    "id": "PRED-HOUTHI",
+    "title": "Houthi Red Sea Fadeout",
+    "call": "Houthi attacks on commercial shipping decline by 70%+ from 2024 peak before June 2027 via cost-benefit flip — no formal defeat required",
+    "confidence": 58,
+    "deadline": "2027-06-30",
+    "status": "OPEN"
+  }
+]
