@@ -44,8 +44,8 @@
     "confidence": 68,
     "thesis": "Gold breakout above $5,000 within 60-90 days",
     "dateOpened": "2026-05-20",
-    "resolvedAt": null,
-    "resolutionNote": null
+    "resolvedAt": "2026-06-23",
+    "resolutionNote": "INCORRECT. Gold at $4,142. Stop-loss $4,200 breached. Kill criteria #1: Fed hawkish, no cut signal (FOMC June 17 unanimous, 9/18 expect hikes). Path A dead. Path B (Iran deal collapse) alive but safe-haven bid not transmitting due to dollar strength from rate expectations. Framework flaw: paths shared a common transmission mechanism."
   },
   {
     "id": "PRED-013",
@@ -152,5 +152,22 @@
     "thesis": "IH2O water ETF outperforms S&P 500 by 5%+ total return — AI data centre water demand forces sector re-rating",
     "dateOpened": "2026-05-29",
     "killCriteria": "Dry-cooling tech reaches cost parity OR no hyperscaler water contract by Q1 2027"
+  },
+  {
+    "id": "PRED-021",
+    "asset": "Gold (XAUUSD)",
+    "direction": "SHORT",
+    "predictionType": "STANDARD",
+    "entry": 4142,
+    "target": 4500,
+    "partialTarget": null,
+    "stopLoss": 4500,
+    "deadline": "2026-08-25",
+    "confidence": 78,
+    "thesis": "Gold stays below $4,500 through Aug 25, 2026. Inverse of PRED-007. Hawkish Fed + strong dollar suppressing safe-haven bid even as Iran deal collapses.",
+    "dateOpened": "2026-06-23",
+    "resolvedAt": null,
+    "resolutionNote": null,
+    "linkedAnalysis": "Analysis-021"
   }
 ]
