@@ -3,22 +3,9 @@ import { getPredictions, getStatus, getPnL, getGeoPredictions, getRelativePredic
 import { EnrichedPrediction, EnrichedRelativePrediction } from '@/lib/types'
 import PriceTicker from '@/components/PriceTicker'
 import StatsBar from '@/components/StatsBar'
-import PredictionCard from '@/components/PredictionCard'
-import GeopoliticalCard from '@/components/GeopoliticalCard'
-import RelativeTradeCard from '@/components/RelativeTradeCard'
-import WatchlistCard from '@/components/WatchlistCard'
+import TabbedContent from '@/components/TabbedContent'
 
 export const dynamic = 'force-dynamic'
-
-function SectionDivider({ label }: { label: string }) {
-  return (
-    <div className="flex items-center gap-4 mb-6">
-      <div className="h-px flex-1 bg-white/5" />
-      <h2 className="font-outfit text-xs uppercase tracking-[0.3em] text-gray-500">{label}</h2>
-      <div className="h-px flex-1 bg-white/5" />
-    </div>
-  )
-}
 
 export default async function Home() {
   const [prices, predictions, geoPredictions, relativePredictions, watchlistPredictions] = await Promise.all([
@@ -89,44 +76,12 @@ export default async function Home() {
       <div className="flex-1 max-w-7xl mx-auto w-full px-4 py-12">
         <StatsBar trades={enriched} geoPredictions={geoPredictions} relativeTrades={enrichedRelative} />
 
-        {/* Live Trades section */}
-        <SectionDivider label="Live Trades" />
-        {enriched.length === 0 && enrichedRelative.length === 0 ? (
-          <p className="text-center text-gray-500 py-10">No live trades found.</p>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
-            {enriched.map((pred) => (
-              <PredictionCard key={pred.id} prediction={pred} />
-            ))}
-            {enrichedRelative.map((pred) => (
-              <RelativeTradeCard key={pred.id} prediction={pred} />
-            ))}
-          </div>
-        )}
-
-        {/* Watchlist section */}
-        {watchlistPredictions.length > 0 && (
-          <>
-            <SectionDivider label="Watchlist" />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
-              {watchlistPredictions.map((pred) => (
-                <WatchlistCard key={pred.id} prediction={pred} />
-              ))}
-            </div>
-          </>
-        )}
-
-        {/* Geopolitical Calls section */}
-        <SectionDivider label="Geopolitical Calls" />
-        {geoPredictions.length === 0 ? (
-          <p className="text-center text-gray-500 py-10">No geopolitical predictions found.</p>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {geoPredictions.map((pred) => (
-              <GeopoliticalCard key={pred.id} prediction={pred} />
-            ))}
-          </div>
-        )}
+        <TabbedContent
+          enriched={enriched}
+          enrichedRelative={enrichedRelative}
+          watchlistPredictions={watchlistPredictions}
+          geoPredictions={geoPredictions}
+        />
       </div>
 
       {/* Footer */}
