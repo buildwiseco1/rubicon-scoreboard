@@ -1,7 +1,6 @@
 import { fetchLivePrices, getPriceForAsset } from '@/lib/prices'
 import { getPredictions, getStatus, getPnL, getGeoPredictions, getRelativePredictions, getRelativeStatus, getWatchlistPredictions } from '@/lib/predictions'
 import { EnrichedPrediction, EnrichedRelativePrediction } from '@/lib/types'
-import PriceTicker from '@/components/PriceTicker'
 import StatsBar from '@/components/StatsBar'
 import PredictionCard from '@/components/PredictionCard'
 import GeopoliticalCard from '@/components/GeopoliticalCard'
@@ -81,9 +80,6 @@ export default async function Home() {
           The line has been crossed.
         </p>
       </header>
-
-      {/* Live Price Ticker */}
-      <PriceTicker initialPrices={prices} />
 
       {/* Content */}
       <div className="flex-1 max-w-7xl mx-auto w-full px-4 py-12">
